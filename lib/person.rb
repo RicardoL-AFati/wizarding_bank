@@ -1,7 +1,7 @@
 class Person
   attr_reader :name
   attr_accessor :cash, :bank_accounts, :credit_card_accounts
-  def initialize(name, cash)
+  def initialize(name, cash = {})
     @name = name
     @cash = {
       galleons: cash[:galleons] || 0,
